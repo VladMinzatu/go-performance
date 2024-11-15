@@ -82,7 +82,7 @@ To run, e.g. using https://github.com/pkg/profile :
 defer profile.Start(profile.TraceProfile, profile.Path(".")).Stop()
 ```
 
-It comes with its own UI to view thread and goroutine timelines. Can also be exported to Prometheus as metrics accessible through the metrics endpoint.
+It comes with its own UI to view thread and goroutine timelines. Can also be exported to Prometheus as metrics accessible through the metrics endpoint (e.g. https://github.com/MadhavJivrajani/gse).
 
 `go tool trace trace.out`
 
