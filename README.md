@@ -82,9 +82,10 @@ To run, e.g. using https://github.com/pkg/profile :
 defer profile.Start(profile.TraceProfile, profile.Path(".")).Stop()
 ```
 
-It comes with its own UI to view thread and goroutine timelines. Can also be exported to Prometheus as metrics accessible through the metrics endpoint (e.g. https://github.com/MadhavJivrajani/gse).
+It comes with its own UI to view thread and goroutine timelines.
+After running, `go tool trace trace.out`
 
-`go tool trace trace.out`
+Can also be exported to Prometheus as metrics accessible through the metrics endpoint (e.g. https://github.com/MadhavJivrajani/gse - essentially it runs a go program with `GODEBUG=schedtrace=10 <binary>` and then it scans the stderr for "SCHED" and then parses those traces to extract metrics and pushes them to prometheus).
 
 # Ideas
 
