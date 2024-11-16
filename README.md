@@ -97,6 +97,7 @@ Can also be exported to Prometheus as metrics accessible through the metrics end
 
 - Goroutine leaks
 
+- performance channel sync vs locking primitives (channel sync is seamless as part of the regular scheduling, whereas locking is extra and expensive operatio - demo it)
 - goroutine vs mutex use cases
 
 ## References
