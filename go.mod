@@ -1,3 +1,3 @@
-module githum.com/vladminzatu/go-performance
+module go-performance
 
 go 1.23.3
