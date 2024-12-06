@@ -1,6 +1,8 @@
 package utils
 
-import "runtime"
+import (
+	"runtime"
+)
 
 func GetMemoryStats() runtime.MemStats {
 	runtime.GC()
