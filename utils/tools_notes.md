@@ -93,6 +93,11 @@ After running, `go tool trace trace.out`
 
 Can also be exported to Prometheus as metrics accessible through the metrics endpoint (e.g. https://github.com/MadhavJivrajani/gse - essentially it runs a go program with `GODEBUG=schedtrace=10 <binary>` and then it scans the stderr for "SCHED" and then parses those traces to extract metrics and pushes them to prometheus).
 
+
+## Observability
+
+For higher level observability, check https://github.com/open-telemetry/opentelemetry-go 
+
 # Ideas
 
 - Optimizing memory allocations (heap vs stack) - benchmarks
